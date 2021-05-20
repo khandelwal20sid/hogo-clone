@@ -1,0 +1,280 @@
+/* general classes */
+.main-color {
+  color: #c7c7c7 !important;
+}
+
+.main-text {
+  font-size: 14px;
+}
+
+.main-text-sm {
+  font-size: 12px;
+}
+
+.icon {
+  font-size: 14px;
+}
+
+.icon-sm {
+  font-size: 9px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.b-bottom {
+  border-bottom: 1px solid #2c3846 !important;
+}
+
+.b-top {
+  border-top: 1px solid #2c3846;
+}
+
+.b-left {
+  border-left: 3px solid #1c3c8a;
+}
+
+/* custom bootstrap classes */
+.dropdown-menu {
+  background-color: #c7c7c7 !important;
+  padding: 0px !important;
+}
+
+.dropdown-item:hover {
+  background-color: #232f3e !important;
+  color: #c7c7c7 !important;
+}
+
+.btn,
+.btn-sm {
+  border: none !important;
+}
+
+.btn,
+.btn-sm:focus {
+  box-shadow: none !important;
+  outline: none;
+}
+
+.card-bg {
+  background-color: #232f3e !important;
+  border: none !important;
+  border-radius: 10px !important;
+}
+
+.progress {
+  height: 5px !important;
+  background-color: #313c4a !important;
+}
+
+.table-striped > tbody > tr:nth-child(even) > td,
+.table-striped > tbody > tr:nth-child(even) > th {
+  background-color: #2a333f !important;
+}
+
+.table-bordered > tbody > tr > td,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > td,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > thead > tr > th {
+  border: 1px solid #2c3846;
+}
+
+/* main css */
+
+#body {
+  overflow-x: hidden;
+  font-family: "Roboto";
+  background-color: #293544;
+  height: 100vh;
+}
+
+#nav1 {
+  background-color: #1c2938;
+}
+
+.logo i {
+  background: linear-gradient(to bottom, #6346a8 20%, #1b3d96 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-search {
+  background-color: #2a333f;
+}
+
+#nav2 {
+  background-color: #1a2633;
+}
+
+.nav-search-input {
+  background-color: inherit;
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler {
+  color: #c7c7c7 !important;
+  border: none !important;
+  outline: none !important;
+}
+
+#navwrap1,
+#navwrap2 {
+  transition: height 1s ease;
+}
+
+#nav3 {
+  background-color: #232f3e;
+}
+
+#mega-menu {
+  color: #c7c7c7;
+  display: none;
+}
+
+#nav2 .dropdown-menu {
+  border: none;
+  background-color: #1c2938 !important;
+  color: #c7c7c7;
+}
+
+.card-gradient {
+  background-image: linear-gradient(to right, #1e53fb, #8a56f1);
+  border: none !important;
+}
+
+.gradient-text-sm {
+  font-size: 16px;
+}
+
+.gradient-text {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.gradient-main {
+  font-size: 15px;
+}
+
+.chart {
+  height: 280px;
+}
+
+.btn-details {
+  background-color: #3ec7e8 !important;
+}
+
+.product-table > tbody > tr > td:nth-child(1) {
+  color: #1a50f6;
+}
+
+.product-table > tbody > tr > td {
+  vertical-align: middle;
+  padding-left: 10px;
+}
+
+.pro-card {
+  border-radius: 7px !important;
+  font-size: 12px;
+  width: 100%;
+}
+
+.available {
+  background-color: #3ddbcb !important;
+}
+
+.limited {
+  background-color: #ffca4a !important;
+}
+
+.limited01 {
+  background-color: #0097b2 !important;
+}
+
+#apps-content {
+  display: none;
+}
+
+#widgets-content {
+  display: none;
+}
+#charts-content {
+  display: none;
+}
+#ui-content {
+  display: none;
+}
+#elements-content {
+  display: none;
+}
+#pages-content {
+  display: none;
+}
+#icons-content {
+  display: none;
+}
+
+@media screen and (max-width: 400px) {
+  .gradient-text {
+    font-size: 20px;
+  }
+
+  .gradient-main {
+    font-size: 13px;
+  }
+}
+
+/* megamenu */
+@media screen and (min-width: 992px) {
+  /* remove the padding from the navbar so the dropdown hover state is not broken */
+  #nav2 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  /* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
+  #nav2 .nav-item {
+    padding: 0.5rem 0.5rem;
+    margin: 0 0.25rem;
+  }
+
+  /* makes the dropdown full width  */
+  #nav2 .dropdown {
+    position: static;
+  }
+
+  #nav2 .dropdown-menu {
+    width: 100%;
+    left: 0;
+    right: 0;
+    /*  height of nav-item  */
+    top: 45px;
+
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s linear;
+  }
+
+  /* shows the dropdown menu on hover */
+  #nav2 .dropdown:hover .dropdown-menu,
+  #nav2 .dropdown .dropdown-menu:hover {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.3s linear;
+  }
+
+  #nav2 .dropdown-menu {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+  }
+}
